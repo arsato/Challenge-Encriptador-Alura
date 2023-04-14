@@ -1,5 +1,5 @@
 function encriptar() {
-  let text = document.getElementById("text-input").value;
+  let text = document.getElementById("text-input").value.toLowerCase();
   if (text === "") {
     alert("Debe escribir un mensaje");
   } else {
