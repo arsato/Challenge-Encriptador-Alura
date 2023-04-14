@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+        <img src="./assets/img/alura.png" />
+      <div class="input-side">
+        <textarea
+          placeholder="Ingrese el texto aquí"
+          class="text-input"
+          id="text-input"
+        ></textarea>
+        <div class="text-input-info">
+          <span class="exclamation"><span class="sign">!</span></span> Solo
+          letras minúsculas y sin acentos
+        </div>
+        <div class="buttons">
+          <button class="encriptar" onClick="encriptar()">Encriptar</button>
+          <button class="desencriptar" onClick="desencriptar()">Desencriptar</button>
+        </div>
+      </div>
+      <div class="output-side">
+        <div class="output-elements">
+          <textarea readonly class="text-output" id="text-output"></textarea>
+          <button class="copiar" onClick="copyToClipboard()">Copiar</button>
+        </div>
+        <div class="nomsg-image" id="nomsg-image">
+            <div class="image-group">
+              <img src="./assets/img/muneco.png" />
+              <p class="nomsg-image-title">Ningún mensaje fue encontrado</p>
+              <p class="nomsg-image-desc">
+                Ingresa el texto que desees encriptar o desencriptar
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="footer">Encriptador realizado por: Ariel Sandoval Toro</div>
+  </body>
+  <script src="./assets/js/index.js"></script>
+</html>
